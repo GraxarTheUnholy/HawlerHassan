@@ -3,22 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hawler Hassan</title>
-    <link rel="stylesheet" href="style.css">
+    <title>My Portfolio Vault</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+    <style>
+        
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #121212; /* Dark background */
+            color: #e0e0e0;
+            font-family: 'Courier New', monospace;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+    </style>
 </head>
 <body>
-    <div class="container">
-        <button class="about-btn">About</button>
-        <div class="vault">
-            <div class="door" id="door">
-                <div class="handle" id="handle"></div>
-                <div class="lines"></div>
-            </div>
-        </div>
-        <p class="open-text" id="open-text">Open Vault?</p>
+    <div class="vault-container">
+        <div id="vault-animation"></div>
+        <div class="vault-instruction">Click and drag to explore my mind</div>
     </div>
+    
+    <nav class="main-nav">
+        <button class="nav-btn" onclick="window.location.href='projects.html'">VIEW PROJECTS</button>
+        <button class="nav-btn" onclick="window.location.href='about.html'">ABOUT ME</button>
+        <button class="nav-btn" onclick="window.location.href='contact.html'">CONTACT & SOCIAL</button>
+    </nav>
 
-    <script src="script.js" defer></script>
+    <script src="scripts/vault.js"></script>
 </body>
 </html>
-
